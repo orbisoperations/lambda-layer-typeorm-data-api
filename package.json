@@ -1,0 +1,48 @@
+{
+  "name": "@jetkit/layer/typeorm-pg",
+  "description": "AWS Lambda Layer for Node.js with typeorm and pg",
+  "version": "1.0.0",
+  "keywords": [
+    "aws",
+    "lambda",
+    "layer",
+    "node",
+    "nodejs",
+    "psql",
+    "postgres",
+    "postgresql",
+    "lambda layer"
+  ],
+  "author": "Mischa <mischa@jetbridge.com>",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jetbridge/lambda-layer-typeorm-pg"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist/*",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prezip": "bash build.sh",
+    "zip": "rm dist/nodejs.zip; zip dist/nodejs.zip layer-out -r",
+    "prepack": "npm run build && npm run zip"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "latest",
+    "@aws-cdk/core": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "aws-cdk": "^1.107.0",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}
