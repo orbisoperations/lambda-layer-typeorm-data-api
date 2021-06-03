@@ -1,5 +1,5 @@
 {
-  "name": "@jetkit/layer/typeorm-pg",
+  "name": "@jetkit/layer-typeorm-pg",
   "description": "AWS Lambda Layer for Node.js with typeorm and pg",
   "version": "1.0.0",
   "keywords": [
