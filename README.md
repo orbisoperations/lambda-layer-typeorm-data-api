@@ -1,10 +1,11 @@
-# AWS Lambda Layer for Node.js with typeorm and pg
+# AWS Lambda layer for Node.js with typeorm and pg
 
-## Current packed version:
+## Current packed versions
 
-pg `8.6.0`
-
-typeorm `0.2.34`
+node_modules
+├── pg@8.6.0
+├── typeorm@0.2.34
+└── typeorm-aurora-data-api-driver@2.1.1
 
 ---
 

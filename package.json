@@ -28,16 +28,15 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "prebuild": "rm -rf dist/*",
     "build": "tsc",
-    "watch": "tsc -w",
+    "start": "tsc -w",
     "prezip": "bash build.sh",
-    "zip": "rm dist/nodejs.zip; zip dist/nodejs.zip layer-out -r",
+    "zip": "npm run build && rm -f dist/nodejs.zip; zip dist/nodejs.zip nodejs -r",
     "prepack": "npm run build && npm run zip"
   },
   "dependencies": {
-    "@aws-cdk/aws-lambda": "latest",
-    "@aws-cdk/core": "latest"
+    "@aws-cdk/aws-lambda": "1.107.0",
+    "@aws-cdk/core": "1.107.0"
   },
   "devDependencies": {
     "@types/node": "latest",

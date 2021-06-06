@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "pg": "latest",
-    "typeorm": "latest"
+    "typeorm": "latest",
+    "typeorm-aurora-data-api-driver": "latest"
   }
 }
