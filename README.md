@@ -1,20 +1,26 @@
-# AWS Lambda layer for Node.js with typeorm and pg
+# Lambda Layer CDK Construct for Node.js Runtimes
 
-## Layers
-* arn:aws:lambda:eu-west-1:898466741470:layer:TypeOrmPg:1	
-* arn:aws:lambda:eu-central-1:898466741470:layer:TypeOrmPg:1	
-* arn:aws:lambda:us-east-1:898466741470:layer:TypeOrmPg:1	
-* arn:aws:lambda:us-west-2:898466741470:layer:TypeOrmPg:1	
+Dependencies included in layer
 
-## Current packed versions
-
-```
-node_modules
-├── pg@8.6.0
-├── typeorm@0.2.34
-└── typeorm-aurora-data-api-driver@2.1.1
+```json
+{
+  "pg": "latest",
+  "typeorm": "latest",
+  "typeorm-aurora-data-api-driver": "latest",
+  "reflect-metadata": "latest"
+}
 ```
 
+
+### Usage
+This example is using [ServerlessStack](https://sst.dev/) but the construct can be used in vanilla aws-cdk as well.
+```typescript
+export function LambdaLayersStack({ stack, app }: StackContext) {
+  const typeormLayer = new NodePostgresLayer(stack, 'TypeORMLayer');
+
+  return { typeormLayer };
+}
+```
 ---
 
-Based on https://github.com/tamino-martinius/cdk-lambda-layers--node-postgres
+Based on https://github.com/jetbridge/lambda-layer-typeorm-pg

@@ -6,6 +6,7 @@
   "dependencies": {
     "pg": "latest",
     "typeorm": "latest",
-    "typeorm-aurora-data-api-driver": "latest"
+    "typeorm-aurora-data-api-driver": "latest",
+    "reflect-metadata": "latest"
   }
 }

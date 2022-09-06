@@ -1,7 +1,8 @@
 {
-  "name": "@jetkit/layer-typeorm-pg",
-  "description": "AWS Lambda Layer for Node.js with typeorm and pg",
-  "version": "1.0.0",
+  "name": "lambda-layer-typeorm-data-api",
+  "description": "Node.js AWS Lambda Layer containing typeorm, typeorm-aurora-data-api-driver, reflect-metadata, and pg",
+  "version": "1.0.13",
+  "private": false,
   "keywords": [
     "aws",
     "lambda",
@@ -13,7 +14,7 @@
     "postgresql",
     "lambda layer"
   ],
-  "author": "Mischa <mischa@jetbridge.com>",
+  "author": "info@orbisops.com",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "license": "MIT",
@@ -22,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jetbridge/lambda-layer-typeorm-pg"
+    "url": "https://github.com/orbisoperations/lambda-layer-typeorm-data-api"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -35,12 +36,11 @@
     "prepack": "npm run build && npm run zip"
   },
   "dependencies": {
-    "@aws-cdk/aws-lambda": "1.107.0",
-    "@aws-cdk/core": "1.107.0"
+    "aws-cdk-lib": "2.24.0"
   },
   "devDependencies": {
     "@types/node": "latest",
-    "aws-cdk": "^1.107.0",
+    "aws-cdk": "2.24.0",
     "ts-node": "latest",
     "typescript": "latest"
   }
