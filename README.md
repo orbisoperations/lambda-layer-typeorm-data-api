@@ -1,13 +1,13 @@
 # Lambda Layer CDK Construct for Node.js Runtimes
 
-Dependencies included in layer
+Dependencies included in v1.0.14
 
 ```json
 {
-  "pg": "latest",
-  "typeorm": "latest",
-  "typeorm-aurora-data-api-driver": "latest",
-  "reflect-metadata": "latest"
+  "pg": "8.7.3",
+  "typeorm": "0.3.7",
+  "typeorm-aurora-data-api-driver": "2.4.4",
+  "reflect-metadata": "0.1.13"
 }
 ```
 

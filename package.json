@@ -1,7 +1,7 @@
 {
   "name": "lambda-layer-typeorm-data-api",
   "description": "Node.js AWS Lambda Layer containing typeorm, typeorm-aurora-data-api-driver, reflect-metadata, and pg",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "private": false,
   "keywords": [
     "aws",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@types/node": "latest",
-    "aws-cdk": "2.24.0",
+    "aws-cdk": "2.39.1",
     "ts-node": "latest",
     "typescript": "latest"
   }
